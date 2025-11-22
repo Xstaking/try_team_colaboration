@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Craving Satisfied 🍩</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fff8f0 url('donut-background.png') repeat;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #ff66b2;
+    font-weight: bold; 
+    text-shadow: 2px 2px #ffe6f2;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5d3a3a;
+    font-size: 16px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ff66b2;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right input {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.login-btn {
+    background: #4da6ff;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px;
+    background: #ffe4e1;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    color: #5d3a3a;
+    margin-bottom: 20px;
+}
+
+.hero-text span {
+    font-size: 70px;
+    font-family: 'Georgia', serif;
+    color: #111;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.choices {
+    margin-top: 20px;
+}
+
+.choice {
+    background: #f8c8dc;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px #999;
+    transition: 0.3s;
+}
+
+.choice:hover {
+    background: #ffb6c1;
+    transform: scale(1.1);
+}
+
+.big-bite {
+    background: #e6f7ff;
+}
+
+.big-bite:hover {
+    background: #b3e0ff;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* Sale Badge Animation */
+.sale-badge {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background: #ff3399;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    animation: bounce 1s infinite alternate;
+    box-shadow: 0px 0px 10px #ff3399;
+}
+
+/* "Order Now" Glow Animation */
+.order-now {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background: #ff66b2;
+    color: white;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    animation: glow 2s infinite alternate;
+    font-size: 18px;
+}
+
+/* Animations */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #ff66b2, 0 0 20px #ff66b2;
+    }
+    to {
+        box-shadow: 0 0 20px #ff99cc, 0 0 30px #ff99cc;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">DONUT</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Franchise</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="nav-right">
+            <input type="text" placeholder="Search">
+            <button class="login-btn">Log In</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Craving <br><span>SATISFIED</span></h1>
+            <p>Choose your favorite donuts:</p>
+            <div class="choices">
+                <div class="choice big-bite">BIG BITE</div>
+                <div class="choice small-bite">SMALL BITE</div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="donut-box.jpg" alt="Donut Box">
+            <div class="sale-badge">50% OFF</div>
+            <div class="order-now">ORDER NOW</div>
+        </div>
+    </section>
+
+</body>
+</html>
